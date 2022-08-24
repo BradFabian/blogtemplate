@@ -48,14 +48,15 @@ html:focus-within {
 }
 
 /* Set core body defaults */
-body, html {
-  min-height: 100vh;
+body {
+  height: 100%;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background: #383838;
   color: #00dd00;
   font-family: "VT323", monospace;
   min-height: 100vh;
+  font-size: 1.6rem;
 }
 
 /* A elements that don't have a class get default styles */
@@ -108,21 +109,12 @@ header {
   justify-content: space-around;
   align-items: center;
   align-content: flex-end;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .header-brand {
   font-family: "Press Start 2P", cursive;
   margin: 1em 0;
-  position: relative;
-  border-bottom: 1px dotted #00dd00;
-}
-
-.header-brand:after {
-  height: 2px;
-  content: "";
-  bottom: -4px;
-  position: absolute;
 }
 
 .header__nav-item--active a {
@@ -151,6 +143,26 @@ header {
   100% {
     text-shadow: 0 0 30px rgba(22, 224, 189, 0.6), 0 0 60px rgba(22, 224, 189, 0.4), 0 0 100px rgba(22, 224, 189, 0.2), 0 0 90px rgba(22, 224, 189, 0.1);
   }
+}
+.blogposts__grid-item {
+  border: 1px solid rgba(255, 166, 0, 0.425);
+  padding: 10px;
+  box-shadow: 5px 10px rgba(255, 166, 0, 0.425);
+  margin: 10px auto;
+}
+
+.blogposts__grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.363);
+  height: 30%;
+  padding: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

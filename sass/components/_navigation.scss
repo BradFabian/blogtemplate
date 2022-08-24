@@ -4,24 +4,19 @@ header {
     justify-content: space-around;
     align-items: center;
     align-content: flex-end;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .header-brand {
     font-family: $default-logo-font-family;
     margin: 1em 0;
-    position: relative; 
-    border-bottom: 1px dotted #00dd00;
-
-}
-
-.header-brand:after {
-    height: 2px;
-	content: '';
-    bottom: -4px;
-    position: absolute;
     
+   
+    
+
 }
+
+
 
 .header__nav-item--active a {
     color: rgba(165, 253, 238, 0.8);

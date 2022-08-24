@@ -1,0 +1,12 @@
+.blogposts__grid-item { border: 1px solid rgba(255, 166, 0, 0.425);
+    padding: 10px;
+    box-shadow: 5px 10px rgba(255, 166, 0, 0.425);
+    margin: 10px auto;
+}
+
+.blogposts__grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
