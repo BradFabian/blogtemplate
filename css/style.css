@@ -57,6 +57,9 @@ body {
   font-family: "VT323", monospace;
   min-height: 100vh;
   font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* A elements that don't have a class get default styles */
@@ -149,6 +152,7 @@ header {
   padding: 10px;
   box-shadow: 5px 10px rgba(255, 166, 0, 0.425);
   margin: 10px auto;
+  max-width: 50rem;
 }
 
 .blogposts__grid {
@@ -158,11 +162,40 @@ header {
   align-items: center;
 }
 
+.blogposts {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: 0 auto;
+  max-width: 90rem;
+}
+
+.blogposts__grid-tags ul li {
+  display: inline-block;
+}
+
+.blogposts__grid-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.363);
   height: 30%;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
