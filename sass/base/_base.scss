@@ -29,7 +29,17 @@ ol[role='list'] {
   list-style: none;
 }
 
+ul a:before,
+p a:before {
+	color: #00dd00;
+	content: ' [ ';
+}
 
+ul a:after,
+p a:after {
+	color: #00dd00;
+	content: ' ] ';	
+}
 
 /* Set core root defaults */
 html:focus-within {
@@ -37,18 +47,13 @@ html:focus-within {
 }
 
 /* Set core body defaults */
-body {
+body, html{
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(218, 226, 230, 0.667),rgb(92, 141, 231)
-  );
-  background-size: cover;
-  background-repeat: no-repeat;
-
+  background: #383838;
+	color: #00dd00;
+  font-family: 'VT323', monospace;
   min-height: 100vh;
 }
 
@@ -56,7 +61,15 @@ body {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
+a {
+	color: white;	
+	text-decoration: none;	
+  cursor: pointer;
+}
 
+a:hover {
+	color: red;
+}
 /* Make images easier to work with */
 img,
 picture {
