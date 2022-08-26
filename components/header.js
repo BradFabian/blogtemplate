@@ -4,14 +4,17 @@ class Header extends HTMLElement {
     }
 
     connectedCallback(){
-        this.innerHTML = `<header>
+       
+        this.innerHTML = `
+        
+        <header>
         <div class="header-brand">MkdirCode</div>
       
         <nav class="header__nav">
             <ul role="list">
-                <li class="header__nav-item header__nav-item--active"><a href='/'>Home</a></li>
-                <li class="header__nav-item"><a href='/about.html'>About</a></li>
-                <li class="header__nav-item"><a href='/contact.html'>Contact</a></li>
+                <li class="header__nav-item"><a class="header__nav-item-link" href='/'>Home</a></li>
+                <li class="header__nav-item"><a  class="header__nav-item-link" href='/about.html'>About</a></li>
+                <li class="header__nav-item"><a class="header__nav-item-link" href='/contact.html'>Contact</a></li>
             </ul>
         </nav>
 
