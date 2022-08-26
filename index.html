@@ -6,21 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mkDirCode</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
 </head>
 <body>
+    <header-component></header-component>
     
-        <header>
-            <div class="header-brand">MkdirCode</div>
-          
-            <nav class="header__nav">
-                <ul role="list">
-                    <li class="header__nav-item header__nav-item--active"><a>Home</a></li>
-                    <li class="header__nav-item"><a>About</a></li>
-                    <li class="header__nav-item"><a>Contact</a></li>
-                </ul>
-            </nav>
-    
-        </header>
+       
 <div class="container">
         <main class="blogposts">
            <div class="blogposts__grid">
@@ -44,28 +36,11 @@
 
         </main>
     </div>
-        <footer>
-        <div class="footer__links">
-            <ul class="footer__links-social">
-                <li class="footer__links-social-links">Twitter</li>
-                <li class="footer__links-social-links">LinkedIn</li>
-                <li class="footer__links-social-links">Portfolio</li>
-              </ul>
-              <ul class="footer__links-resource">
-                <li class="footer__links-resource-links">MDN</li>
-                <li class="footer__links-resource-links">CSS-Tricks</li>
-                <li class="footer__links-resource-links">Smashing Magazine</li>
-              </ul>
-        </div>
-          
-         <p>Blog Designed & Developed By <a>Fabian Web Dev</a></p>
-          
-        </footer>
-
-
+       
+    <footer-component></footer-component>
 
    
-   
+   <script src="./app.js"></script>
 
 </body>
 </html>
