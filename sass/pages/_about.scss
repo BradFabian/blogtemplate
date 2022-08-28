@@ -1,7 +1,18 @@
 .about__content{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+   
+}
+
+.about__content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+
 }
 
 /*.about__content-img img {
