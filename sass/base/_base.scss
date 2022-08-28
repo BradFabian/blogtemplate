@@ -147,6 +147,10 @@ textarea, input { outline: none; }
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+  header {
+    flex-direction: column;
+  }
   
   /* CSS */
   .blogposts {
