@@ -14,6 +14,66 @@ header {
    
     
 
+
+
+}
+
+
+
+
+
+/* Menu Icon */
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+	
+  background-color: #00dd00;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+  background: #00dd00;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.hamb-line::before{
+  top: 5px;
+}
+.hamb-line::after{
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
 }
 
 
@@ -26,6 +86,23 @@ header {
 .header__nav-item {
     display: inline-block;
     margin:0 5px;
+}
+
+@media (max-width: 767px) {
+
+  .header__nav {
+    display: none;
+  }
+  
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    
+
+    .hamb{
+        display: none;
+    }
 }
 
 @keyframes neonspark {
