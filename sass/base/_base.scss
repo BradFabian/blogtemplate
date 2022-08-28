@@ -106,3 +106,71 @@ textarea, input { outline: none; }
     scroll-behavior: auto !important;
   }
 }
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+  .blogposts {
+    flex-direction: column;
+  }
+
+  .about__container {
+   
+    margin: 20px;
+  }
+
+  .about__content {
+    margin: 20px;
+  }
+
+  .about__content-container {
+    flex-direction: column;
+  }
+
+  .blogposts__featured {
+    margin: 20px;
+  }
+
+  .form-area{
+    margin: 40px !important;
+  }
+}
